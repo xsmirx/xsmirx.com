@@ -1,11 +1,12 @@
 import * as React from "react";
 import Layout from "../components/Layout";
+import Title from "../components/Title/Title";
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Ivan Smirnov">
-      <h1>Ivan Smirnov</h1>
-      <p>Frontend Developer</p>
+      <Title />
+      <p>Content</p>
     </Layout>
   );
 };
