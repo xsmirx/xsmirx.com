@@ -5,9 +5,9 @@ import GlobalStyle from "../styles/GlobalStyle";
 import MainContainer from "../styles/MainContainer";
 import theme from "../styles/theme";
 import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
+// import Header from "./Header/Header";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, ...props }) => {
   return (
     <ThemeProvider theme={theme.primary}>
       <GlobalStyle />
@@ -16,7 +16,7 @@ const Layout = ({ pageTitle, children }) => {
       </Helmet>
       {/* <Header /> */}
       <MainContainer>{children}</MainContainer>
-      <Footer />
+      <Footer {...props} />
     </ThemeProvider>
   );
 };
