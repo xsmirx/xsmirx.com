@@ -24,7 +24,7 @@ const StyledSection = styled.section`
     }
   }
   p {
-    max-width: 500px;
+    max-width: 550px;
     font-size: 1rem;
   }
 `;
