@@ -7,22 +7,6 @@ const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h1 {
-    font-size: clamp(2.4rem, 8vw, 4.8rem);
-    position: relative;
-    display: inline-block;
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: clamp(0.3rem, 2vw, 1rem);
-      bottom: clamp(5px, 10%, 10px);
-      left: 0;
-      background-color: ${(props) => props.theme.linkColor};
-      z-index: -1;
-    }
-  }
   p {
     max-width: 550px;
     font-size: 1rem;
