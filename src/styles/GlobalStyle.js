@@ -31,6 +31,21 @@ const GlobalStyle = createGlobalStyle`
       z-index: -1;
     }
   }
+  h2 {
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 0.3rem;
+      bottom: 4px;
+      left: 0;
+      background-color: ${(props) => props?.theme?.linkColor || "blue"};
+      z-index: -1;
+    }
+  }
   #___gatsby {
     height: 100%;
     width: 100%;
