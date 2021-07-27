@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
@@ -6,7 +7,7 @@ const StyledFooter = styled.footer`
   padding: 0 3%;
   max-width: 80%;
   height: 55px;
-  border-top: 2px solid ${(props) => props.theme.linkColor};
+  /* border-top: 2px solid ${(props) => props.theme.linkColor}; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +21,16 @@ const Footer = (props) => {
   return (
     <StyledFooter>
       <h6>© 2020 - {currenFullYeaer}</h6>
-      <h6>Built by Ivan Smirnov</h6>
+      <h6>
+        Built by Ivan Smirnov with{" "}
+        <Link
+          to="https://www.gatsbyjs.com/"
+          target="_blank"
+          rel="nofollow noopener"
+        >
+          Gatsby
+        </Link>
+      </h6>
     </StyledFooter>
   );
 };
