@@ -1,10 +1,14 @@
 import React from "react";
+import StyledSectionTitle from "../../styles/StyledSectionTitle";
+import StyledSection from "./../../styles/StyledSection";
 
 const Contacts = () => {
   return (
-    <div>
-      <h2>Contacts</h2>
-    </div>
+    <StyledSection>
+      <StyledSectionTitle>
+        <h2>Contacts</h2>
+      </StyledSectionTitle>
+    </StyledSection>
   );
 };
 
