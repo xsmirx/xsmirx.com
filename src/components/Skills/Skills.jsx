@@ -50,13 +50,6 @@ const Skills = () => {
           <MyLinearProgress skill="Comunication" value={86} />
           <MyLinearProgress skill="Team Player" value={75} />
           <MyLinearProgress skill="Time Menegement" value={70} />
-
-          {/* <ul>
-            <li>Team Player</li>
-            <li>Proactivity</li>
-            <li>Comunication</li>
-            <li>Time Menegement</li>
-          </ul> */}
         </StyledList>
       </StyledBlock>
     </StyledSection>
