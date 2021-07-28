@@ -7,6 +7,9 @@ const StyledBlock = styled.div`
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const Contacts = () => {
@@ -23,8 +26,8 @@ const Contacts = () => {
         </p>
         <p>
           <i>
-            Также чиркни мне если хочешь просто поздоровоться, пообщаться или
-            спросить совета.
+            Пиши мне если хочешь просто поздоровоться, пообщаться или спросить
+            совета.
           </i>
         </p>
       </StyledBlock>

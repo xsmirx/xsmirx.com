@@ -26,6 +26,9 @@ const StyledList = styled.div`
     list-style: "- ";
     list-style-position: inside;
   }
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const Skills = () => {

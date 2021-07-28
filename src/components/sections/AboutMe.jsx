@@ -32,7 +32,7 @@ const StyledTextBlock = styled.div`
     text-align: justify;
   }
   @media (max-width: 768px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 `;
 
