@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.xsmirx.com",
+    autor: "Ivan Smirnov",
     title: "Ivan Smirnov",
     description: "Frontend Developer",
   },
