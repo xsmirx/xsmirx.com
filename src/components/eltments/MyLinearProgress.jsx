@@ -17,7 +17,7 @@ const MyLinearProgress = ({ skill, value }) => {
   return (
     <StyledBlock>
       <p>{skill}</p>
-      <StyledLinearPropgress variant="buffer" value={value} />
+      <StyledLinearPropgress variant="determinate" value={value} />
     </StyledBlock>
   );
 };
