@@ -1,25 +1,35 @@
+import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
-import AboutMe from "../components/AboutMe/AboutMe";
-import Contacts from "../components/Contacts/Contacts";
 import Layout from "../components/Layout";
-import MyPropjects from "../components/MyProjects/MyProjects";
-import Skills from "../components/Skills/Skills";
-import Title from "../components/Title/Title";
+import AboutMe from "../components/sections/AboutMe";
+import Contacts from "../components/sections/Contacts";
+import MyPropjects from "../components/sections/MyProjects";
+import Skills from "../components/sections/Skills";
+import Title from "../components/sections/Title";
 
 const IndexPage = (props) => {
+  const { site } = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+          description
+          autor
+        }
+      }
+    }
+  `);
   return (
-    <Layout pageTitle="Ivan Smirnov" {...props}>
+    <Layout
+      pageTitle={`${site.siteMetadata.title} | ${site.siteMetadata.description}`}
+      autor={site.siteMetadata.autor}
+      {...props}
+    >
       <Title />
       <AboutMe />
       <Skills />
       <MyPropjects />
       <Contacts />
-      {
-        // About me (photo, text, social contacts and email)
-        // skills (soft, stack, plans)
-        // My projectsfrom GitHub
-        // contacts (btn mailto)
-      }
     </Layout>
   );
 };
