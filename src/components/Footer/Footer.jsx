@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
@@ -16,20 +15,16 @@ const StyledFooter = styled.footer`
   }
 `;
 
-const Footer = (props) => {
+const Footer = ({ autor }) => {
   const currenFullYeaer = new Date().getFullYear();
   return (
     <StyledFooter>
       <h6>© 2020 - {currenFullYeaer}</h6>
       <h6>
-        Built by Ivan Smirnov with{" "}
-        <Link
-          to="https://www.gatsbyjs.com/"
-          target="_blank"
-          rel="nofollow noopener"
-        >
+        {`Built by ${autor} with `}
+        <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">
           Gatsby
-        </Link>
+        </a>
       </h6>
     </StyledFooter>
   );

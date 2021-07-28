@@ -7,16 +7,14 @@ import theme from "../styles/theme";
 import Footer from "./Footer/Footer";
 // import Header from "./Header/Header";
 
-const Layout = ({ pageTitle, children, ...props }) => {
+const Layout = ({ pageTitle, children, autor, ...props }) => {
   return (
     <ThemeProvider theme={theme.primary}>
       <GlobalStyle />
-      <Helmet>
-        <title>{pageTitle}</title>
-      </Helmet>
+      <Helmet title={pageTitle} />
       {/* <Header /> */}
       <MainContainer>{children}</MainContainer>
-      <Footer {...props} />
+      <Footer autor={autor} />
     </ThemeProvider>
   );
 };
