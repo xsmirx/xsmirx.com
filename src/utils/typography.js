@@ -46,7 +46,7 @@ const typography = new Typography({
     "ul,ol": {
       marginLeft: 0,
     },
-    "@media only screen and (max-width:480px)": {
+    "@media only screen and (max-width:768px)": {
       "ul,ol": {
         marginLeft: rhythm(1),
       },
