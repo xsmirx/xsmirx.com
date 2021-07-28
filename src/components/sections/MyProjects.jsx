@@ -1,15 +1,15 @@
 import React from "react";
 import StyledSectionTitle from "../../styles/StyledSectionTitle";
-import StyledSection from "./../../styles/StyledSection";
+import StyledSection from "../../styles/StyledSection";
 
-const Contacts = () => {
+const MyPropjects = () => {
   return (
     <StyledSection>
       <StyledSectionTitle>
-        <h2>Contacts</h2>
+        <h2>My projects</h2>
       </StyledSectionTitle>
     </StyledSection>
   );
 };
 
-export default Contacts;
+export default MyPropjects;

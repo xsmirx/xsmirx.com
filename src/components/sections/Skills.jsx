@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import StyledSectionTitle from "../../styles/StyledSectionTitle";
 import MyLinearProgress from "../eltments/MyLinearProgress";
-import StyledSection from "./../../styles/StyledSection";
+import StyledSection from "../../styles/StyledSection";
 
 const StyledBlock = styled.div`
   display: grid;
