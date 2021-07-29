@@ -15,6 +15,19 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6, a {
     color: ${(props) => props?.theme?.headerColor || "black"};
   }
+  a {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.5vh;
+      background-color: ${(props) => props.theme.linkColor};
+      z-index: -1;
+      }
+  }
   h1 {
     font-size: clamp(2.4rem, 8vw, 4.8rem);
     position: relative;
