@@ -6,7 +6,7 @@ const MyPropjects = () => {
   return (
     <StyledSection>
       <StyledSectionTitle>
-        <h2>My projects</h2>
+        <h2 id={"my-projects"}>My projects</h2>
       </StyledSectionTitle>
     </StyledSection>
   );

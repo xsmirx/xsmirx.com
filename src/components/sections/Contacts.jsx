@@ -16,7 +16,7 @@ const Contacts = () => {
   return (
     <StyledSection>
       <StyledSectionTitle>
-        <h2>Contacts</h2>
+        <h2 id="contacts">Contacts</h2>
       </StyledSectionTitle>
       <StyledBlock>
         <p>
