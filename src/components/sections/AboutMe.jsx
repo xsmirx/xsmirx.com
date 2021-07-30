@@ -58,7 +58,7 @@ const AboutMe = () => {
             src="./../../images/photo.jpg"
             alt="my photo"
             placeholder="blurred"
-            imgStyle={{ "border-radius": "4px" }}
+            imgStyle={{ borderRadius: "4px" }}
             height={370}
           />
         </StyledBlockForImage>
