@@ -27,7 +27,7 @@ const links = [
 const MonitorHeader = () => {
   const headerLinks = links.map(({ name, link }) => {
     return (
-      <HeaderLink id={name} to={link}>
+      <HeaderLink key={name} to={link}>
         {name}
       </HeaderLink>
     );

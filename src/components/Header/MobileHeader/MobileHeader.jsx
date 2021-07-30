@@ -57,7 +57,7 @@ const MobileHeader = () => {
 
   const headerLinks = links.map(({ name, link }) => {
     return (
-      <Link id={name} to={link} onClick={() => setIsOpen(false)}>
+      <Link key={name} to={link} onClick={() => setIsOpen(false)}>
         {name}
       </Link>
     );
