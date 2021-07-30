@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 0.5vh;
+      height: 0.3vh;
       background-color: ${(props) => props.theme.linkColor};
       z-index: -1;
       }
