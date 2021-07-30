@@ -3,6 +3,8 @@ import styled from "styled-components";
 import StyledSectionTitle from "../../styles/StyledSectionTitle";
 import MyLinearProgress from "../eltments/MyLinearProgress";
 import StyledSection from "../../styles/StyledSection";
+import { graphql, useStaticQuery } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const StyledBlock = styled.div`
   display: grid;
@@ -32,6 +34,34 @@ const StyledList = styled.div`
 `;
 
 const Skills = () => {
+  const data = useStaticQuery(graphql`
+    {
+      mdx(frontmatter: { title: { eq: "Skills" } }) {
+        body
+        frontmatter {
+          Comunication
+          Proactivity
+          Team_Player
+          Time_Menegement
+        }
+      }
+    }
+  `);
+  const softSkills = Object.keys(data.mdx.frontmatter)
+    .sort((a, b) => data.mdx.frontmatter[b] - data.mdx.frontmatter[a])
+    .map((skill) => {
+      let correctSkill = skill;
+      if (skill.includes("_")) {
+        correctSkill = skill.split("_").join(" ");
+      }
+      return (
+        <MyLinearProgress
+          key={skill}
+          skill={correctSkill}
+          value={data.mdx.frontmatter[skill]}
+        />
+      );
+    });
   return (
     <StyledSection>
       <StyledSectionTitle>
@@ -40,19 +70,11 @@ const Skills = () => {
       <StyledBlock>
         <StyledList>
           <h4>Development stack:</h4>
-          <ul>
-            <li>HTML, CSS</li>
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>Redux</li>
-          </ul>
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </StyledList>
         <StyledList>
           <h4>My soft skills:</h4>
-          <MyLinearProgress skill="Proactivity" value={90} />
-          <MyLinearProgress skill="Comunication" value={86} />
-          <MyLinearProgress skill="Team Player" value={75} />
-          <MyLinearProgress skill="Time Menegement" value={70} />
+          {softSkills}
         </StyledList>
       </StyledBlock>
     </StyledSection>

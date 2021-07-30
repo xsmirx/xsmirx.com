@@ -2,6 +2,9 @@ import React from "react";
 import StyledSectionTitle from "../../styles/StyledSectionTitle";
 import StyledSection from "../../styles/StyledSection";
 import styled from "styled-components";
+import ContactButtons from "../Contacts/ContactButtons";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import { graphql, useStaticQuery } from "gatsby";
 
 const StyledBlock = styled.div`
   max-width: 800px;
@@ -13,23 +16,21 @@ const StyledBlock = styled.div`
 `;
 
 const Contacts = () => {
+  const { mdx } = useStaticQuery(graphql`
+    {
+      mdx(slug: { eq: "Contacts" }) {
+        body
+      }
+    }
+  `);
   return (
     <StyledSection>
       <StyledSectionTitle>
         <h2 id="contacts">Contacts</h2>
       </StyledSectionTitle>
       <StyledBlock>
-        <p>
-          В настоящее время я открыт к пердложениям по работе. Со мной можно
-          связаться любым удобым для вас способом, и я обязательно постарась вам
-          ответить.
-        </p>
-        <p>
-          <i>
-            Пиши мне если хочешь просто поздоровоться, пообщаться или спросить
-            совета.
-          </i>
-        </p>
+        <MDXRenderer>{mdx.body}</MDXRenderer>
+        <ContactButtons />
       </StyledBlock>
     </StyledSection>
   );
