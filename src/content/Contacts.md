@@ -6,6 +6,6 @@ telegram: "https://telegram.me/xsmirx"
 email: "mailto:xsmirx@gmail.com"
 ---
 
-В настоящее время я открыт к пердложениям по работе. Со мной можно связаться любым удобым для вас способом, и я обязательно постарась вам ответить.
+I am currently open to job offers. You can contact me in any way convenient for you, and I will definitely try to answer you.
 
-_Пиши мне если хочешь просто поздоровоться, пообщаться или спросить совета._
+_Email me if you just want to say hello, chat or ask for advice._
