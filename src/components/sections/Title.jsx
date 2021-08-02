@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ContactButtons from "../Contacts/ContactButtons";
 
 const StyledSection = styled.section`
   min-height: 100vh;
@@ -24,6 +25,7 @@ const Title = () => {
             I'm React frontend developer, baised in Saint-Petersburg, Russia
           </i>
         </p>
+        <ContactButtons justifyContent="flex-start" />
       </div>
     </StyledSection>
   );
