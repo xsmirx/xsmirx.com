@@ -33,6 +33,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-social-icons": "^5.5.1",
     "react-typography": "^0.16.20",
     "styled-components": "^5.3.0",
     "typography": "^0.16.21",
