@@ -7,7 +7,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql, useStaticQuery } from "gatsby";
 
 const StyledBlock = styled.div`
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
   @media (max-width: 768px) {

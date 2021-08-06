@@ -5,16 +5,23 @@ import HeaderLink from "../../../styles/HeaderLink";
 const StyledHeader = styled.header`
   background-color: ${(props) => props.theme.background};
   position: fixed;
-  width: 90vw;
+  width: 100%;
   height: 55px;
-  top: 0;
   left: 0;
+  top: 0;
+
+  z-index: 1;
+`;
+
+const StyledDiv = styled.div`
+  width: 90vw;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 40px;
   padding: 0 3%;
-  z-index: 1;
 `;
 
 const links = [
@@ -32,7 +39,11 @@ const MonitorHeader = () => {
       </HeaderLink>
     );
   });
-  return <StyledHeader>{headerLinks}</StyledHeader>;
+  return (
+    <StyledHeader>
+      <StyledDiv>{headerLinks}</StyledDiv>
+    </StyledHeader>
+  );
 };
 
 export default MonitorHeader;

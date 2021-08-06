@@ -2,7 +2,7 @@ import Typography from "typography";
 
 const typography = new Typography({
   title: "Ivan Smirnov blog",
-  baseFontSize: "18px",
+  baseFontSize: "16px",
   baseLineHeight: "1.75",
   scaleRatio: 5 / 2,
   googleFonts: [
@@ -13,8 +13,6 @@ const typography = new Typography({
   ],
   headerFontFamily: ["Merriweather", "Georgia", "serif"],
   bodyFontFamily: ["Merriweather", "Georgia", "serif"],
-  // headerColor: "hsla(0,0%,0%,1)",
-  // bodyColor: "hsla(0,0%,0%,0.9)",
   headerWeight: 900,
   bodyWeight: 400,
   boldWeight: 700,
@@ -23,7 +21,6 @@ const typography = new Typography({
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
     blockquote: {
       ...scale(1 / 5),
-      // color: "hsla(0,0%,100%,0.7)",
       fontStyle: "italic",
       paddingLeft: rhythm(13 / 16),
       marginLeft: rhythm(-1),
