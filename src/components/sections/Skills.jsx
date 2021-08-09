@@ -64,8 +64,8 @@ const Skills = () => {
     });
   return (
     <StyledSection>
-      <StyledSectionTitle>
-        <h2 id="skills">Skills</h2>
+      <StyledSectionTitle id="skills">
+        <h2>Skills</h2>
       </StyledSectionTitle>
       <StyledBlock>
         <StyledList>

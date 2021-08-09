@@ -47,7 +47,7 @@ const StyledButton = styled.button`
 const links = [
   { name: "About Me", link: "#about-me" },
   { name: "Skills", link: "#skills" },
-  { name: "My projects", link: "#my-projects" },
+  // { name: "My projects", link: "#my-projects" },
   { name: "Contacts", link: "#contacts" },
 ];
 

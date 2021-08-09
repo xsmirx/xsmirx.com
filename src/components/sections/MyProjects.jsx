@@ -5,8 +5,8 @@ import StyledSection from "../../styles/StyledSection";
 const MyPropjects = () => {
   return (
     <StyledSection>
-      <StyledSectionTitle>
-        <h2 id={"my-projects"}>My projects</h2>
+      <StyledSectionTitle id={"my-projects"}>
+        <h2>My projects</h2>
       </StyledSectionTitle>
     </StyledSection>
   );

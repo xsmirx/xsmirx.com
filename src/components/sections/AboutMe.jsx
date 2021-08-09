@@ -48,8 +48,8 @@ const AboutMe = () => {
   `);
   return (
     <StyledSection>
-      <StyledSectionTitle>
-        <h2 id={"about-me"}>About Me</h2>
+      <StyledSectionTitle id={"about-me"}>
+        <h2>About Me</h2>
       </StyledSectionTitle>
 
       <StyledBlock>

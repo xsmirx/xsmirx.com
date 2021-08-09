@@ -25,8 +25,8 @@ const Contacts = () => {
   `);
   return (
     <StyledSection>
-      <StyledSectionTitle>
-        <h2 id="contacts">Contacts</h2>
+      <StyledSectionTitle id={"contacts"}>
+        <h2>Contacts</h2>
       </StyledSectionTitle>
       <StyledBlock>
         <MDXRenderer>{mdx.body}</MDXRenderer>

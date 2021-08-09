@@ -3,7 +3,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import AboutMe from "../components/sections/AboutMe";
 import Contacts from "../components/sections/Contacts";
-import MyPropjects from "../components/sections/MyProjects";
+// import MyPropjects from "../components/sections/MyProjects";
 import Skills from "../components/sections/Skills";
 import Title from "../components/sections/Title";
 
@@ -28,7 +28,7 @@ const IndexPage = (props) => {
       <Title />
       <AboutMe />
       <Skills />
-      <MyPropjects />
+      {/* <MyPropjects /> */}
       <Contacts />
     </Layout>
   );
