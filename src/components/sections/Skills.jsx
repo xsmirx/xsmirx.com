@@ -42,7 +42,7 @@ const Skills = () => {
           Communication
           Proactivity
           Team_Player
-          Time_Manegement
+          Time_Management
         }
       }
     }
