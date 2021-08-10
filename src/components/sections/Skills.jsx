@@ -39,10 +39,10 @@ const Skills = () => {
       mdx(frontmatter: { title: { eq: "Skills" } }) {
         body
         frontmatter {
-          Comunication
+          Communication
           Proactivity
           Team_Player
-          Time_Menegement
+          Time_Manegement
         }
       }
     }
