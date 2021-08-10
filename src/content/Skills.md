@@ -1,9 +1,9 @@
 ---
 title: Skills
 Proactivity: 90
-Comunication: 80
+Communication: 80
 Team Player: 75
-Time Menegement: 70
+Time Manegement: 70
 ---
 
 - HTML, CSS
