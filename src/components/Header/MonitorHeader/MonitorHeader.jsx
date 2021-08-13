@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HeaderLink from "../../../styles/HeaderLink";
+import ResumeButton from "../ResumeButton";
 
 const StyledHeader = styled.header`
   background-color: ${(props) => props.theme.background};
@@ -41,7 +42,10 @@ const MonitorHeader = () => {
   });
   return (
     <StyledHeader>
-      <StyledDiv>{headerLinks}</StyledDiv>
+      <StyledDiv>
+        {headerLinks}
+        <ResumeButton />
+      </StyledDiv>
     </StyledHeader>
   );
 };

@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import BurgerIcon from "../../icons/CloseIcon";
+import ResumeButton from "../ResumeButton";
 
 const StyledHeader = styled.div`
   position: fixed;
@@ -25,8 +26,8 @@ const StyledHeader = styled.div`
 
 const StyledButton = styled.button`
   position: fixed;
-  bottom: 5vh;
-  right: 5vw;
+  bottom: 8vh;
+  right: 8vw;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -64,7 +65,10 @@ const MobileHeader = () => {
   });
   return (
     <>
-      <StyledHeader isOpen={isOpen}>{headerLinks}</StyledHeader>
+      <StyledHeader isOpen={isOpen}>
+        {headerLinks}
+        <ResumeButton />
+      </StyledHeader>
       <StyledButton onClick={toggleMenu}>
         <BurgerIcon />
       </StyledButton>
